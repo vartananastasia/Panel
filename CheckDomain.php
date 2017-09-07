@@ -28,7 +28,7 @@ class CheckDomain{
     /**
      * phone to send sms to inform
      */
-    const SMS_INFORM_NUMBER = '79104591903';
+    const SMS_INFORM_NUMBER = '79104***903';
 
     /**
      * Worker
