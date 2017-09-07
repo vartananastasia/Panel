@@ -1,6 +1,5 @@
 <?
 namespace Panel;
-use MongoDB\BSON\Timestamp;
 
 
 /**
