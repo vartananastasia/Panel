@@ -1,5 +1,6 @@
 <?
 namespace Panel;
+use MongoDB\BSON\Timestamp;
 
 
 /**
@@ -27,7 +28,7 @@ class CheckDomain{
     /**
      * phone to send sms to inform
      */
-    const SMS_INFORM_NUMBER = '7910****903';
+    const SMS_INFORM_NUMBER = '79104591903';
 
     /**
      * Worker
@@ -135,7 +136,7 @@ class CheckDomain{
 
         $inform_arr = [];
         foreach ($status as $s){
-            if (!$s["UF_STATUS"] == 200)
+            if ($s["UF_STATUS"] <> 200)
                 $inform_arr[$s["UF_DOMAIN"]] += 1;
         }
 
